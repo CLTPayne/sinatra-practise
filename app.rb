@@ -1,6 +1,6 @@
 require 'sinatra'
 
-#set :session_secret, 'super secret'
+set :session_secret, 'super secret'
 
 get '/' do
   "Hi"
@@ -15,6 +15,3 @@ get '/cat' do
   <img src='http://bit.ly/1eze8aE'>
   </div>"
 end
-
-# <img src='http://bit.ly/1eze8aE'>
- # <img style=border: dashed red; src='http://bit.ly/1eze8aE'>
