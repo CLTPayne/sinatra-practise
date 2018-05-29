@@ -1,5 +1,7 @@
 require 'sinatra'
 
+#set :session_secret, 'super secret'
+
 get '/' do
   "Hi"
 end
@@ -8,4 +10,11 @@ get '/secret' do
   "I just had a massive 7 year anniversary"
 end
 
-set :session_secret, 'super secret'
+get '/cat' do
+  "<div style='border: 1px dashed red'>
+  <img src='http://bit.ly/1eze8aE'>
+  </div>"
+end
+
+# <img src='http://bit.ly/1eze8aE'>
+ # <img style=border: dashed red; src='http://bit.ly/1eze8aE'>
