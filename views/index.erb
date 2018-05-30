@@ -1,7 +1,13 @@
 <% if @names %>
 <h1>My name is <%= @names %></h1>
-<% else %>
-<h1>This cat is sad with no name</h1>
+<%else%>
+<form action='/named-cat'>
+    <p>Name:</p>
+  <input type="text" name="name">
+    <!--<p>Age:</p>
+  <input type="text" age="age">-->
+  <input type="submit" value="Submit" >
+</form>
 <% end %>
 
 <h1>My name is <%= @names %>, <%= @age %> cat years old</h1>
