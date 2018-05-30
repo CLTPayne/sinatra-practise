@@ -7,9 +7,18 @@ get '/' do
 end
 
 get '/secret' do
-  "I'm studying on Wednesday"
+  @names = 'Tuesday'
+  "I'm studying on #{@names}"
 end
 
-get '/cat' do
+get '/random-cat' do
+  @names = %w(Amigo Oscar Viking).sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @names = params[:name]
+  @age = params[:age]
   erb(:index)
 end
