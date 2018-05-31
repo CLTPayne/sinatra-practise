@@ -17,7 +17,7 @@ get '/random-cat' do
 end
 
 
-get '/cat_form' do
+get '/cat-form' do
   erb(:cat_form)
 end
 
